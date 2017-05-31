@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+  firebase: {
+    apiKey: 'AIzaSyBxHcu20lvFRDI9u6iGhYWDmjygiu1gYyI',
+    authDomain: 'food-blog-da49e.firebaseapp.com',
+    databaseURL: 'https://food-blog-da49e.firebaseio.com',
+    storageBucket: 'food-blog-da49e.appspot.com',
+  },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

@@ -1,1 +1,7 @@
 <p> Welcome to our food blog!! </p>
+
+<ul>
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</ul>
