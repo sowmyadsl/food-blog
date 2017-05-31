@@ -1,12 +1,13 @@
-<li>
-  {{post.title}}
-  <br>
-  {{post.body}}
-  <br>
-  "{{post.category}}"
-  {{#if isImageShowing}}
-  <p><img src={{post.image}} alt={{post.category}} {{action 'imageHide'}}></p>
-  {{else}}
-  <button{{action 'imageShow'}}>Show image </button>
-  {{/if}}
-</li>
+<div class="well" style="width: 75%;">
+  <div class="card-block">
+    <h4 class="title">{{post.title}}</h4>
+    <p class="category">"{{post.category}}"</p>
+    <p class="body">{{post.body}}</p>
+    {{#if isImageShowing}}
+    <p><img src={{post.image}} alt={{post.category}} {{action 'imageHide'}}></p>
+    {{else}}
+    <button{{action 'imageShow'}}>Show image </button>
+    {{/if}}
+    <button {{action 'delete' post}}>Delete post</button>
+  </div>
+</div>
