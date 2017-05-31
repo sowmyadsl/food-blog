@@ -1,0 +1,41 @@
+*{
+  font-family: 'Goudy Bookletter 1911', serif;
+font-family: 'Pompiere', cursive;
+font-family: 'Assistant', sans-serif;
+font-family: 'Frank Ruhl Libre', sans-serif;
+
+}
+
+#logo{
+  width: 100px;
+  float:left;
+  margin-left: 0;
+}
+
+div{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#head-contain{
+  margin-left: 2%;
+}
+ul{
+  list-style: none;
+}
+
+/*h1 {
+  text-align: center;
+}*/
+
+.media-heading{
+  font-size: 28px;
+
+}
+
+.media-object{
+  width: 350px;
+  float: left;
+}

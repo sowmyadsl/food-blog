@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewPost: false,
+  updatePostForm: false,
   actions: {
-    postFormShow(){
-      this.set('addNewPost', true);
+    updatePostForm() {
+      this.set('updatePostForm', true);
     },
-    savePost1(){
+    update(post) {
       var params = {
         title: this.get('title'),
         body: this.get('body'),
@@ -15,8 +15,8 @@ export default Ember.Component.extend({
         name: this.get('name'),
         date: this.get('date')
       };
-      this.set('addNewPost', false);
-      this.sendAction('savePost2', params);
+      this.set('updatePostForm', false);
+      this.sendAction('update', post, params);
     }
   }
 });

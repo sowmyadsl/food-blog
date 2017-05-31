@@ -11,13 +11,43 @@
   </div>
 </nav>
 
-<div class= "container">
-  <header class= "jumbotron">
+
+<div class= "container" id="head-contain">
+  <div id= "header">
+    <img id="logo" src="https://image.freepik.com/free-icon/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_318-61086.jpg">
     <h1><strong>Messy Kitchen Stories</strong></h1>
-  </header>
-    {{outlet}}
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+  {{outlet}}
+    </div>
+    <div class="col-md-2">
+      <h2>Categories:</h2>
+      <select name="select">
+        <option value="curries">Curries</option>
+        <option value="breads">Breads</option>
+        <option value="desserts">Desserts</option>
+        <option value="appetizers">Appetizers</option>
+        <option value="entree">Entree</option>
+        <option value="main_course">Main Course</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="brunch">Brunch</option>
+        <option value="indian">Indian</option>
+        <option value="mexican">Mexican</option>
+        <option value="italian">Italian</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="gluten_free">Gluten Free</option>
+        <option value="vegan">Vegan</option>
+        <option value="one_pot_meals">One Pot Meals</option>
+      </select>
+      <br>
+      {{new-post savePost2 ="savePost3"}}
+    </div>
+  </div>
+
   <hr>
-  <footer>
+  <div id="footer">
     {{#link-to 'contact'}}We would love to answer your questions!{{/link-to}}
-  </footer>
+  </div>
 </div>
