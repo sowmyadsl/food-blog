@@ -7,24 +7,24 @@
       <li class="active">{{#link-to 'index'}}Home{{/link-to}}</li>
       <li>{{#link-to 'about'}}About{{/link-to}}</li>
       <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+
     </ul>
   </div>
 </nav>
 
+<div id= "header">
+  <img id="logo" src="https://image.freepik.com/free-icon/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_318-61086.jpg">
+  <h1><strong>Messy Kitchen Stories</strong></h1>
+</div>
 
-<div class= "container" id="head-contain">
-  <div id= "header">
-    <img id="logo" src="https://image.freepik.com/free-icon/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_318-61086.jpg">
-    <h1><strong>Messy Kitchen Stories</strong></h1>
-  </div>
-
+<div class= "container" >
   <div class="row">
-    <div class="col-md-8">
-  {{outlet}}
+    <div class="col-md-9">
+
+      {{outlet}}
     </div>
     <div class="col-md-2">
-      <h2>Categories:</h2>
-      <select name="select">
+      <select >
         <option value="curries">Curries</option>
         <option value="breads">Breads</option>
         <option value="desserts">Desserts</option>
@@ -41,13 +41,17 @@
         <option value="vegan">Vegan</option>
         <option value="one_pot_meals">One Pot Meals</option>
       </select>
-      <br>
-      {{new-post savePost2 ="savePost3"}}
     </div>
   </div>
 
   <hr>
   <div id="footer">
-    {{#link-to 'contact'}}We would love to answer your questions!{{/link-to}}
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
   </div>
 </div>
