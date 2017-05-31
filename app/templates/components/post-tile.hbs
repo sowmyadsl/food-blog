@@ -1,11 +1,12 @@
-
 <div class="media">
-<br>  <br>
+  <div class="row">
+    <div class="col-md-4">
   <div class="media-left">
         <h4 class="media-heading">{{post.title}}</h4>
     <img src={{post.image}} class="media-object" alt={{post.category}}>
-
   </div>
+  </div>
+  <div class="col-md-6">
   <div class="media-body">
     <br>  <br>
     <p>{{post.body}}</p>
@@ -18,4 +19,6 @@
     <button {{action 'delete' post}}>Delete post</button>
     <br>
   </div>
+</div>
+</div>
 </div>

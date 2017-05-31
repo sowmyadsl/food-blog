@@ -16,5 +16,14 @@
     "category": "curries",
     "image": "https://s-media-cache-ak0.pinimg.com/564x/b9/5a/4e/b95a4e6ede0636bbe2b018bf9a6d78ab.jpg",
     "name": "Sowmya"
+  }],
+  "comments": [{
+    "author": "Kaushik",
+    "rating": 4,
+    "content":"I tried it and it turned out yum!!"
+  },{
+    "author": "Jin",
+    "rating": 5,
+    "content":"I loved it !!"
   }]
 }

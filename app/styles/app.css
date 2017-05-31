@@ -27,18 +27,22 @@ font-family: 'Frank Ruhl Libre', sans-serif;
   margin-left: 2%;
 }
 
+.media-left{
+  width: 400px;
+}
 
 .media-heading{
   font-size: 28px;
+  width: 360px;
 
 }
 
 .media-object{
-  width: 100%;
+  width: 350px;
 }
 
 .media-body{
-  width: 40%;
+  width: 60%;
 }
 
 #footer {
