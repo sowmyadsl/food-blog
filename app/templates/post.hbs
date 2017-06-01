@@ -1,0 +1,7 @@
+<h2>More Information about {{model.title}}'s </h2>
+
+{{update-post post=model update="update"}}
+
+{{post-detail post=model destroyPost="destroyPost" destroyComment="destroyComment"}}
+
+{{new-comment saveComment="saveComment" post=model}}

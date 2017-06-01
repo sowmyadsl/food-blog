@@ -5,5 +5,7 @@ title: DS.attr(),
 body: DS.attr(),
 category: DS.attr(),
 image: DS.attr(),
-name: DS.attr()
+name: DS.attr(),
+date: DS.attr(),
+comments: DS.hasMany('comment', { async: true })
 });

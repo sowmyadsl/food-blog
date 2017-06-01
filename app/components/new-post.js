@@ -12,8 +12,8 @@ export default Ember.Component.extend({
         body: this.get('body'),
         category: this.get('category'),
         image: this.get('image'),
-        name: this.get('name'),
-        date: this.get('date')
+        date: this.get('date'),
+        name: this.get('name')  
       };
       this.set('addNewPost', false);
       this.sendAction('savePost2', params);
